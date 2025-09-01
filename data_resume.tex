@@ -1,0 +1,291 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+    
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif 
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+
+
+\begin{document}
+
+\input{sections/heading}
+
+\input{sections/education}
+
+\input{sections/skills}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Data Manager}{May 2025 - August 2025}
+      {Daechitop English Institute}{}
+      \resumeItemListStart
+        \resumeItem{Managed student performance data using \textbf{Excel} by analyzing and visualizing students' performance trend to identify key solution for improvement and generated reports that drove a \textbf{15\%} improvement in test scores.}
+        \resumeItem{Developed an automation tool using \textbf{PyAutoGUI} to streamline the creation of course materials of the institute, improving material creation efficiency by \textbf{40\%}, enabling instructors to focus on personalized teaching.}
+        \resumeItem{Ensured accuracy and consistency of student performance datasets through systematic record-keeping and data cleaning, reducing overall errors by \textbf{20\%} and strengthening the reliability of academic performance insights.}
+
+        % \resumeItem{Developed an automation tool using \textbf{PyAutoGUI} to streamline the creation of course materials of the institute.}
+        % \resumeItem{Improved work speed by \textbf{300\%} resulting in exceedingly increased class materials for students' exam preparation.}
+        % \resumeItem{Contributed to \textbf{5\%} increase in students' exam average, leading to increased  number of students enrolling.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Database Developer}{January 2025 - April 2025}
+      {AKCSE}
+      % {Association of Korean Canadian Scientists and Engineers}
+      {Waterloo, ON}
+      \resumeItemListStart
+        \resumeItem{Led the development of official AKCSE website using \textbf{Express} and \textbf{MongoDB} to enhance accessibility to academic and career help resources for University of Waterloo Students and increased the participants of events by \textbf{150\%}.}
+        % \resumeItem{Designed and developed the official website of the organization by designing and implementing \textbf{SQL databases}, while implementing \textbf{dynamic CRUD} operations that improved data management efficiency by \textbf{35\%}.}
+        % \resumeItem{Constructed scalable data pipelines using MySQL for reliable backend performance of user data, while implementing authentication and access control features to enhance data security.}
+        \resumeItem{Optimized website maintenance efficiency by \textbf{300\%} by implementing \textbf{dynamic CRUD} and designing an efficient database, while implementing \textbf{authentication} and access control features to strengthen data security.}
+        \resumeItem{Demonstrated high quality teamwork and leadership by collaborating with a team of \textbf{5}, improving project specialization which led to faster development and contributed` to \textbf{20\%} increase in event participation.}
+        % \resumeItem{Increased number of students joining events by \textbf{200\%} with \textbf{enhanced marketing} through the official website.}
+      \resumeItemListEnd
+      
+    % \resumeSubheading
+    %   {Finance Executive}{September 2024 - December 2024}
+    %   {Association of Korean Canadian Scientists and Engineers}{Waterloo, ON}
+    %   \resumeItemListStart
+    %     \resumeItem{Calculated budget usage from events and activities for each term to manage the \textbf{cash flow} of the organization.}
+    %     \resumeItem{Created \textbf{annual financial reports} that improved transparency and resulted in reduced budget waste of \textbf{10\%}.}
+    %   \resumeItemListEnd
+      
+      \resumeSubheading
+      {Finance Analyst}{September 2024 - December 2024}
+      {AKCSE}
+      % {Association of Korean Canadian Scientists and Engineers}
+      {Waterloo, ON}
+      \resumeItemListStart
+        \resumeItem{Conveyed accountability and organization skills by analyzing, managing, and visualizing the cash flow of the organization using \textbf{Excel} to reduce reporting time by \textbf{30\%} and improved reporting accuracy by \textbf{10\%}.}
+        \resumeItem{Reduced \textbf{10\%} of unnecessary expenditures by writing annual financial reports and conducting accurate analysis to identify inefficiencies and recommended actionable strategies for better financial management of the organization.}
+        \resumeItem{Coordinated with executive members to exercise strategized marketing while promoting academic resources such as Open House, and Resume Critique for the greater Kitchener-Waterloo community.} 
+        % % \resumeItem{Exercised strategized marketing while promoting academic resources for the greater Waterloo community.} 
+        % % \resumeItem{Demonstrated creativity and dedication by providing innovative suggestions and critical feedback at weekly committee meetings.}
+        % \resumeItem{Demonstrated \textbf{creativity} and \textbf{dedication} by providing innovative suggestions at weekly committee meetings.}
+        % \resumeItem{Created \textbf{annual financial reports} that improved transparency and resulted in reduced budget waste of \textbf{10\%}.}
+      \resumeItemListEnd
+    
+    % \resumeSubheading
+    %   {Project Manager}{September 2021 - May 2022}
+    %   {National Honour Society}{}
+    %   \resumeItemListStart
+    %     \resumeItem{Conducted a project of sending Christmas presents to children in Mongolia by cooperating with an organization called Samaritan’s Purse as a member of National Honour Society of my school.} 
+    %     \resumeItem{Collected presents from 12 classes in the school and sent 100 boxes to children that are in need in Mongolia.} 
+    %   \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+ 
+%-----------PROJECTS-----------
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading      
+      {{\textbf{AI/ML Football Analysis}} $|$ \emph{Python, OpenCV, Pandas} $|$ \href{https://github.com/1128alex/football_analysis}{\underline{GitHub}} $|$ \href{https://football-analysis-front.vercel.app/}{\underline{Link}}}{}
+      \resumeItemListStart
+         \resumeItem{Designed and implemented a football analysis system using \textbf{Python} and \textbf{OpenCV} to preprocess football match videos and compute key metrics (ball possession, player speed, and interval) using displacement analysis.} 
+         \resumeItem{Achieved \textbf{0.877} mAP50 (goalkeeper: 0.982, player: 0.988, referee: 0.965) by training a \textbf{YOLOv11} model using \textbf{1,000+} annotated images, with \textbf{35.7} ms per-frame inference latency (preprocess: 1.4 ms, postprocess: 3.9 ms).} 
+         % \resumeItem{Integrated object detection and tracking to extract and interpolate player and ball movements from video frames.}
+         \resumeItem{Deployed scalable backend services with \textbf{AWS EC2} instance and \textbf{SQS} for reliable ML inference and processing, integrated into a \textbf{Next.js} web app for client video uploads and interactive analysis with real-time player statistics.}
+      \resumeItemListEnd
+
+    % \resumeProjectHeading      
+    %     {{\textbf{Customer Churn Prediction Model}} $|$ \emph{Python, SciKit, Pandas, Streamlit} $|$ \href{https://github.com/1128alex/customer_churn_analysis}{\underline{GitHub}}}{}
+    %     \resumeItemListStart
+    %        \resumeItem{Built a \textbf{machine learning model} to predict customer churn, using \textbf{900+} telecom industry customers' datasets.}
+    %        \resumeItem{Utilized the model with interactive \textbf{Streamlit} web app to improve accessibility and gain actionable insights.} 
+    %        \resumeItem{Identified \textbf{central factors}(tenure, monthly charges), helping companies plan their products more effectively.} 
+    %     \resumeItemListEnd
+
+    \resumeProjectHeading      
+      {{\textbf{FBREF Analysis}} $|$ \emph{Python, Pandas, Matplotlib, Selenium, PowerBI} $|$ \href{https://github.com/1128alex/transfermarkt_analysis}{\underline{GitHub}}}{}
+      \resumeItemListStart
+         \resumeItem{Collected data of \textbf{500+} player profiles from Transfermarkt, a football statistic web page, using \textbf{Selenium}, to analyze the position specific market trends to identify positions with high demand, as well as underrated positions.}
+         \resumeItem{Cleaned raw HTML tables into \textbf{Pandas} DataFrames, organizing attributes such as age, position, and values. dfadsfads fadsdaf dsafdas fadsfads} 
+         % \resumeItem{Performed statistical analysis to discover recent football market trends according to the players' market values.} 
+         % \resumeItem{Analyzed market-values and player growth trend by visualising datas with \textbf{Matplotlib} for intuitive analysis.} 
+           \resumeItem{Provided the analysis to a professional team scouter, and enhanced scouting efficiency and performance by \textbf{200\%}.dfadsfads fadsdaf dsafdas fadsfads} 
+        \resumeItemListEnd
+      \resumeSubHeadingListEnd
+    
+    % \resumeProjectHeading      
+    %   {{\textbf{Transfermarkt Analysis}} $|$ \emph{Python, Pandas, Matplotlib, Selenium} $|$ \href{https://github.com/1128alex/transfermarkt_analysis}{\underline{GitHub}}}{}
+    %   \resumeItemListStart
+    %      \resumeItem{Collected data of \textbf{500+} player profiles from Transfermarkt, a football statistic web page, using \textbf{Selenium}, to analyze the position specific market trends to identify positions with high demand, as well as underrated positions.}
+    %      \resumeItem{Cleaned raw HTML tables into \textbf{Pandas} DataFrames, organizing attributes such as age, position, and values. dfadsfads fadsdaf dsafdas fadsfads} 
+    %      % \resumeItem{Performed statistical analysis to discover recent football market trends according to the players' market values.} 
+    %      % \resumeItem{Analyzed market-values and player growth trend by visualising datas with \textbf{Matplotlib} for intuitive analysis.} 
+    %        \resumeItem{Provided the analysis to a professional team scouter, and enhanced scouting efficiency and performance by \textbf{200\%}.dfadsfads fadsdaf dsafdas fadsfads} 
+    %     \resumeItemListEnd
+    %   \resumeSubHeadingListEnd
+    
+      % \resumeProjectHeading      
+      % {{\textbf{Virtual Academic Management System}} $|$ \emph{Java, Spring, MySQL, EC2} $|$ \href{https://github.com/1128alex/academic_management_system}{\underline{GitHub}}}{}
+      %     \resumeItemListStart
+      %      \resumeItem{Built an academic management web app with CRUD operations with \textbf{20+} pages using \textbf{Spring} and \textbf{MySQL}.}
+      %      \resumeItem{Distributed the project through \textbf{Apache Tomcat} server using the \textbf{EC2} service from \textbf{AWS}.}
+      %      % \resumeItem{Implemented over \textbf{10} essential features, \textbf{CRUD} operations of course postings and assignments, self implemented real-time chat, custom course search filters, and \textbf{dynamic operations} and views with the database.} 
+      %     \resumeItem{Resolved the issue where I wanted to increase the id by group by using the SELECT query inside another query.}
+      %     % \resumeItem{Ensured reliability by writing over 200 test cases and resolving critical errors such as multiple PK issues, file upload errors, time zone mismatches, interval setting errors, etc.}
+      % \resumeItemListEnd
+
+      % \resumeProjectHeading      
+      % {{\textbf{Personal Portfolio Website}} $|$ \emph{Typescript, React, SASS} $|$ \href{https://github.com/1128alex/alex-lee}{\underline{GitHub}} $|$ \href{https://1128alex.github.io/alex-lee/}{\underline{Link}}}{}
+      %     \resumeItemListStart
+      %      \resumeItem{Developed a personal portfolio website using \textbf{Typescript} and \textbf{React} to showcase professional skills and projects to enhance personal brand visibility and resulted in \textbf{150\%} increased networking and interview opportunities.} 
+      %      \resumeItem{Designed a modern portfolio website using \textbf{SASS}, including responsive layouts, for better user experience.} 
+      % \resumeItemListEnd
+      
+      % \resumeProjectHeading      
+      % {{\textbf{Biquadris Game}} $|$ \emph{C++, X-Window} $|$ \href{https://github.com/1128alex/biquadris}{\underline{GitHub}}}{}
+      %     \resumeItemListStart
+      %      \resumeItem{Led a team of three to build Biquadris, non-real time Tetris game, using \textbf{C++}.}
+      %      \resumeItem{Built a visually responsive game board with real-time score tracking and piece previews using \textbf{X-Window}.} 
+      %      \resumeItem{Conducted over \textbf{500} test cases to ensure stability and reduce runtime errors during play sessions.} 
+      % \resumeItemListEnd
+      % \resumeSubHeadingListEnd
+
+  
+%-----------Extra Curricular-----------
+% \section{Extra Curricular}
+  % \resumeSubHeadingListStart
+    % \resumeSubheading
+    %   {Executive of Finanace Team}{September 2024 - Present}
+    %   {Association of Korean Canadian Scientists and Engineers}{Waterloo, ON}
+    %   \resumeItemListStart
+    %     \resumeItem{Conveyed accountability and organization skills by managing a fund and official files as administrative manager.}
+    %     \resumeItem{Coordinated with executive members to promote academic resources such as Open House, and Resume Critique.}
+    %     % \resumeItem{Exercised strategized marketing and coordinated logistics while promoting academic resources for the greater Kitchener-Waterloo community.} 
+    %     \resumeItem{Exercised strategized marketing while promoting academic resources for the greater Waterloo community.} 
+    %     % \resumeItem{Demonstrated creativity and dedication by providing innovative suggestions and critical feedback at weekly committee meetings.}
+    %     \resumeItem{Demonstrated creativity and dedication by providing innovative suggestions at weekly committee meetings.}
+    %   \resumeItemListEnd
+    
+    % \resumeSubheading
+    %   {Project Manager}{September 2021 - May 2022}
+    %   {National Honour Society}{}
+    %   \resumeItemListStart
+    %     \resumeItem{Conducted a project of sending Christmas presents to children in Mongolia by cooperating with an organization called Samaritan’s Purse as a member of National Honour Society of my school.} 
+    %     \resumeItem{Collected presents from 12 classes in the school and sent 100 boxes to children that are in need in Mongolia.} 
+    %   \resumeItemListEnd
+
+    % \resumeSubheading
+    %   {Captain of Varsity Soccer Team/Leader of Futsal Club}{February 2020 - May 2022}
+    %   {BIS}{South Korea}
+    %   \resumeItemListStart
+    %     \resumeItem{Led the high school varsity soccer team as a \textbf{captain} for 3 months, by fostering \textbf{teamwork}, organizing practices,  and guiding the team through a \textbf{competitive tournament}.} 
+    %     \resumeItem{Managed a club of 24 students by arranging teams and conflicts, and playing futsal for 30 minutes each week.} 
+    %     \resumeItem{Recognized for outstanding performance with the MVP award for being the best player on the varsity team and the All-Star Conference honor, given to the best players in the league.} 
+    %   \resumeItemListEnd
+      
+  % \resumeSubHeadingListEnd
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+
+
+%-------------------------------------------
+
+
+
+\end{document}
