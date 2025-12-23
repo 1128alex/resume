@@ -64,7 +64,7 @@
 
 %-------------------------
 % Custom commands
-\newcommand{\Role}{Database Developer}
+\newcommand{\Role}{Database Engineer}
 \newcommand{\resumeItem}[1]{
   \item\small{
     {#1 \vspace{-2pt}}
@@ -112,20 +112,40 @@
 
 %-----------Skills-----------
 \section{Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-      \textbf{Languages}{: Python, Java, C/C++, C\#, R, SQL(MySQL, MongoDB), Bash} \\
-      \textbf{Data/ML}{: Pandas, Matplotlib, SciKit, Pytorch, TensorFlow, NumPy, OpenCV} \\
-      \textbf{Tools}{: PowerBI, Linux, Git, AWS, Express, Spring} \\
-    }}
- \end{itemize}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Languages:} Python, SQL(MySQL, PostgreSQL, MongoDB), R, Java, C/C++ \\
+    \textbf{Libraries:} Scikit-learn, PyTorch, TensorFlow, Pandas, NumPy, OpenCV, Matplotlib \\
+    \textbf{Tools:} Power BI, Tableau, Seaborn, Git, Linux, AWS \\
+  }}
+\end{itemize}
 
 
  %-----------EXPERIENCE-----------
 \section{Experience}
 \resumeSubHeadingListStart
   \input{experience/data_scientist-city_of_edmonton.tex}
-  \input{experience/developer-AKCSE.tex}
+  % \input{experience/developer-AKCSE.tex}
+  \resumeSubheading
+    {Database Engineer}{May 2025 - August 2025}
+    {Association of Korean Canadian Scientists and Engineers}{Waterloo, ON}
+    \resumeItemListStart
+        \resumeItem{Designed and implemented \textbf{MongoDB} schemas and \textbf{Express} APIs for the official AKCSE platform, structuring member, event, and resource data for efficient querying and future analytics.}
+        \resumeItem{Optimized query patterns and indexing strategy, improving database throughput and reducing response times by approximately \textbf{3x} for core user flows.}
+        \resumeItem{Implemented authentication, role-based access control, and input validation across CRUD operations to safeguard member data and maintain data integrity.}
+    \resumeItemListEnd
+  % \input{experience/finance_lead-AKCSE.tex}
+  \resumeSubheading
+    {Finance Analyst}{September 2024 - April 2025}
+    {Association of Korean Canadian Scientists and Engineers}{Waterloo, ON}
+    \resumeItemListStart
+        % \resumeItem{Built and maintained \textbf{Excel}-based cash flow trackers for $1,000\textbf{+}$ in annual funding, categorizing income and expenses to give the executive team clear visibility into spending patterns.}
+        \resumeItem{Managed and audited Excel-based cash flow records for $1,000\textbf{+}$ annual funding, ensuring accurate categorization of income and expenses.}
+        \resumeItem{Analyzed historical expenditure patterns and vendor quotes to identify financial risks and opportunities, leading to a 10\% reduction in unnecessary costs.}
+        \resumeItem{Translated financial data into interactive \textbf{PowerBI} dashboards for the executive team, supporting strategic budget allocation.}
+        % \resumeItem{Used basic market research and scenario analysis (e.g., price comparisons, budget simulations) to recommend data-driven decisions for events and operations.}
+    \resumeItemListEnd
+
 \resumeSubHeadingListEnd
 
 
@@ -133,13 +153,13 @@
 \section{Projects}
   \resumeSubHeadingListStart
 
+  \input{projects/fbref_analysis}
+
+  \input{projects/credit_fraud}
+
   \input{projects/CV_football_analytics}
   
   % \input{projects/customer_churn}
-  
-  \input{projects/credit_fraud}
-
-  \input{projects/fbref_analysis}
   
   % \input{projects/virtual_academic_management}
   
@@ -149,25 +169,24 @@
   
   \resumeSubHeadingListEnd
   
-%-----------CERTIFICATES-----------
-\section{Certifications}
-\resumeSubHeadingListStart
-  \resumeProjectHeading
-  {{\textbf{Data Science Professional Certificate}} $|$ \emph{Python, OpenCV, Pandas} $|$ \href{https://github.com/1128alex/aiml_football_analysis}{\underline{GitHub}}}{}
-    \resumeItemListStart
-      \resumeItem{Deployed services on \textbf{AWS EC2} with \textbf{SQS}, and built a \textbf{Next.js} web app for video upload and real-time analysis.}
-    \resumeItemListEnd
-  \resumeProjectHeading
-    {{\textbf{Machine Learning Specialization}} $|$ \emph{Python, OpenCV, Pandas} $|$ \href{https://github.com/1128alex/aiml_football_analysis}{\underline{GitHub}}}{}
-    \resumeItemListStart
-      \resumeItem{Deployed services on \textbf{AWS EC2} with \textbf{SQS}, and built a \textbf{Next.js} web app for video upload and real-time analysis.}
-    \resumeItemListEnd
-\resumeSubHeadingListEnd
-  
 %-----------EDUCATION-----------
 \input{sections/education}
   
-  
+%-----------CERTIFICATES-----------
+% \section{Certifications}
+% \begin{itemize}[leftmargin=0.35in, itemsep=2pt, topsep=2pt, parsep=0pt]
+%   \item \small{
+%     \textbf{Machine Learning Specialization}, Stanford University $|$ 
+%     \href{https://coursera.org/verify/XXXXXX}{\underline{Credential}}
+%   }
+%   \item \small{
+%     \textbf{Deep Learning Specialization}, DeepLearning.AI $|$ 
+%     \href{https://coursera.org/verify/YYYYYY}{\underline{Credential}}
+%   }
+% \end{itemize}
+
+
+
 %-------------------------------------------
 
 
