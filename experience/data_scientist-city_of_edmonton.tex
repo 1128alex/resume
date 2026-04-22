@@ -1,10 +1,53 @@
+\providecommand{\targetrole}{undefined}
+
+\def\getjobtitle{%
+    \ifdefstring{\targetrole}{mle}{Machine Learning Engineer}{%
+    \ifdefstring{\targetrole}{ds}{Data Scientist}{%
+    \ifdefstring{\targetrole}{de}{Data Engineer}{%
+    \ifdefstring{\targetrole}{se}{Software Engineer}{%
+    \ifdefstring{\targetrole}{da}{Data Analyst}{%
+        \textbf{UNDEFINED}%
+    }}}}}%
+}
+
 \resumeSubheading
-    {Machine Learning Engineer}{Jan. 2026 -- Aug. 2026}
+    {\getjobtitle\ \textbar\ \href{https://docs.google.com/presentation/d/1WOm0X5kTEawN9oi1kk3rZ-PcGRvoMVvffAqyW8OxGE8/edit?usp=sharing}{\underline{Showcase}}}
+    {Jan. 2026 - Apr. 2026}
     {City of Edmonton - Future Cities Institute}{Edmonton, AB}
+    
     \resumeItemListStart
-        \resumeItem{Architected and deployed \textbf{CityVision}, an open-source real-time traffic control software, achieving \textbf{65\% cost savings} in city infrastructure operations through automated vehicle detection.}
-        \resumeItem{Optimized a \textbf{YOLOv11} vehicle detection model with an automated data pipeline on \textbf{GCP} for continuous training, improving model inference efficiency and lifecycle management.}
-        \resumeItem{Engineered a real-time monitoring dashboard using \textbf{Shiny R} to provide stakeholders with interactive traffic analytics and live insights for infrastructure decision-making.}
-        \resumeItem{Containerized the entire application stack using \textbf{Docker} to ensure a scalable environment and streamlined deployment via \textbf{CI/CD pipelines} (GitHub Actions/GCP).}
-        \resumeItem{Collaborated in an \textbf{Agile} environment, regularly presenting technical progress and model performance metrics to stakeholders to facilitate data-driven urban policy improvements.}
+        % \resumeItem{Collaborated in an \textbf{Agile} environment to facilitate data-driven urban policy improvements.}
+
+        \ifdefstring{\targetrole}{mle}{
+            \resumeItem{Developed CityVision, a traffic monitoring project funded by Mitacs, aiming to assisting Edmonton’s traffic management and saving \textbf{\$20,000} for the city.}
+            \resumeItem{Implemented traffic monitoring system using \textbf{OpenCV} with \textbf{RF-DETR} model to count vehicles and calculate their speed for \textbf{20{\scriptsize +}} case studies, utilizing \textbf{Google Cloud Storage} for centralized data management.}
+            \resumeItem{Optimized computational resource efficiency by \textbf{33\%} by implementing background subtraction module using pixel difference method, to omit parked cars from the study.}
+            \resumeItem{Enhanced speed measurement accuracy by \textbf{72\%} by calibrating intrinsic and extrinsic parameters to perform 3D reconstruction, transforming perspectives into Bird’s Eye View.}
+            \resumeItem{Containerized the entire pipeline using \textbf{Docker} and deployed to \textbf{GCP Compute Engine}, ensuring environment consistency across development and production stages.}
+            %
+            % \resumeItem{Implemented \textbf{Perspective Transformation} to generate \textbf{Bird’s Eye View} projections, significantly improving vehicle speed calculation accuracy by mitigating camera-induced spatial distortion.}
+            % \resumeItem{Engineered a high-performance CV pipeline by migrating the legacy \textbf{R backend to Python}, integrating \textbf{YOLOv12} and \textbf{OpenCV background subtraction} to enhance real-time detection stability.}
+            % \resumeItem{Architected a scalable, containerized infrastructure using \textbf{Docker} and \textbf{GCP}, ensuring 100\% environment parity for the team and streamlining the end-to-end model deployment lifecycle.}
+            % \resumeItem{Validated system robustness and scalability through extensive load testing on \textbf{100,000+} data samples, ensuring consistent performance for large-scale urban traffic analysis.}
+            }{} 
+            
+            \ifdefstring{\targetrole}{ds}{%
+            \resumeItem{Developed \textbf{CityVision} analytics engine for \textbf{65\% efficiency} gain.}
+            \resumeItem{Conducted \textbf{EDA} to improve model accuracy by \textbf{15\%}.}
+            \resumeItem{Built \textbf{Shiny R} dashboard for real-time traffic insights.}
+            }{}
+            
+            \ifdefstring{\targetrole}{se}{%
+            \resumeItem{Developed CityVision, a traffic monitoring project funded by Mitacs, aiming to assisting Edmonton’s traffic management and saving \textbf{\$20,000} for the city.}
+            % \resumeItem{Architected the app platform by using \textbf{React} and \textbf{Python}, significantly improving system responsiveness and enabling scalable real-time data visualization.}
+            \resumeItem{Implemented an interactive app using \textbf{React} and \textbf{Python}, utilizing \textbf{OpenCV} with \textbf{RF-DETR} model to count vehicles and calculate their speed for \textbf{20{\scriptsize +}} case studies.}
+            % \resumeItem{Optimized computational resource efficiency by \textbf{33\%} by implementing background subtraction module using pixel difference method, to omit parked cars from the study.}
+            \resumeItem{Enhanced speed measurement accuracy by \textbf{72\%} by calibrating intrinsic and extrinsic parameters to perform 3D reconstruction, transforming perspectives into Bird’s Eye View.}
+            \resumeItem{Containerized the entire pipeline using \textbf{Docker} and deployed to \textbf{GCP Compute Engine}, ensuring environment consistency across development and production stages.}
+        }{}
+        
+        % % [에러 확인용: 아무것도 선택 안 됐을 때 표시]
+        % \ifboolexpr{ not test {\ifdefstring{\targetrole}{mle}} and not test {\ifdefstring{\targetrole}{ds}} }
+        % {\resumeItem{\textcolor{red}{CRITICAL ERROR: No match found for role '\targetrole'. Check spaces!}}}{}
+
     \resumeItemListEnd

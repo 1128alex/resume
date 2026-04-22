@@ -20,6 +20,7 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{etoolbox}
 \input{glyphtounicode}
 
 
@@ -64,6 +65,8 @@
 
 %-------------------------
 % Custom commands
+\newcommand{\targetrole}{se}
+
 \newcommand{\resumeItem}[1]{
   \item\small{
     {#1 \vspace{-2pt}}
@@ -108,15 +111,15 @@
 %----------HEADING----------
 \input{sections/heading}
 
-% \input{sections/education}
+\input{sections/education}
 
 %-----------Skills-----------
 \section{Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
       \textbf{Languages}{: Python, Java, C/C++, Typescript, Javascript, C\#, R, SQL, Bash} \\
-      \textbf{Frameworks/Libraries}{: React, Express, Bootstrap, jQuery, Pandas} \\
-      \textbf{Tools}{: Spring, PowerBI, MySQL, MongoDB, Linux, Git, AWS} \\
+      \textbf{Libraries}{: React, Express, jQuery, Pandas, NumPy, Matplotlib, Scikit-learn, TensorFlow} \\
+      \textbf{Tools}{: Spring, PowerBI, MySQL, MongoDB, Linux, Git, Google Cloud, AWS} \\
     }}
  \end{itemize}
 
@@ -135,12 +138,22 @@
 
   \input{projects/virtual_academic_management}
 
-  \input{projects/CV_football_analytics}
+  % \input{projects/CV_football_analytics}
+  \resumeProjectHeading
+  {{\textbf{Computer Vision Football Analytics}} $|$ \emph{Python, OpenCV, Pandas} $|$ \href{https://github.com/1128alex/aiml_football_analysis}{\underline{GitHub}} $|$ \href{https://football-analysis-front.vercel.app/}{\underline{Link}}}{}
+  % {{\textbf{Computer Vision Football Analytics}} $|$ \href{https://github.com/1128alex/aiml_football_analysis}{\underline{GitHub}} $|$ \href{https://football-analysis-front.vercel.app/}{\underline{Link}}}{}
+  \resumeItemListStart
+  \resumeItem{Developed a football analysis system using \textbf{YOLOv11} and fine-tuned with \textbf{10,000{\scriptsize +}} images to detect players, referees, and the ball, achieving \textbf{0.877} mAP50 with 35.7 ms per-frame latency.} 
+  \resumeItem{Implemented \textbf{K-means clustering} to automatically assign players to their team, according to their jersey colors.} 
+  \resumeItem{Enhanced players’ metrics accuracy by \textbf{27\%} by engineering \textbf{camera movement compensation} feature using \textbf{Optical Flow} to track metrics consistently even on camera moving environment.} 
+  % \resumeItem{Built a football analysis system using \textbf{OpenCV} to track key metrics such as ball possession and player speed.} 
+  \resumeItem{Deployed services on \textbf{AWS EC2} with \textbf{SQS}, and built a \textbf{Next.js} web app for video upload and real-time analysis.}
+  \resumeItemListEnd
 
-  \input{projects/personal_website}
-  
   \input{projects/biquadris}
   
+  \input{projects/personal_website}
+
   % \input{projects/customer_churn}
   
   % \input{projects/fbref_analysis}
@@ -150,21 +163,21 @@
   \resumeSubHeadingListEnd
   
 
-%-----------EDUCATION-----------
+% %-----------EDUCATION-----------
 % \input{sections/education}
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {University of Waterloo}{September 2023 - April 2028}
-      {Bachelors of Mathematics, Minor in Combinatorics and Optimization}{}
+% \section{Education}
+%   \resumeSubHeadingListStart
+%     \resumeSubheading
+%       {University of Waterloo}{September 2023 - April 2028}
+%       {Bachelors of Mathematics, Minor in Combinatorics and Optimization}{}
       
-  \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-      	\textbf{Relevant Coursework}{: Data Structures, Algorithms, OOP, Statistics, Sampling Design, Linear Algebra} \\
-      	\textbf{Scholarship}{: President's Scholarship of Distinction - \$2,000 scholarship for students with average over 95\%}
-    }}
-  \end{itemize}
-  \resumeSubHeadingListEnd
+%   \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+%       	\textbf{Relevant Coursework}{: Data Structures, Algorithms, OOP, Statistics, Sampling Design, Linear Algebra} \\
+%       	\textbf{Scholarship}{: President's Scholarship of Distinction - \$2,000 scholarship for students with average over 95\%}
+%     }}
+%   \end{itemize}
+%   \resumeSubHeadingListEnd
 
 
 

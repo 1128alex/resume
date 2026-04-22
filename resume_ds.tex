@@ -20,6 +20,7 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{etoolbox}
 \input{glyphtounicode}
 
 
@@ -57,14 +58,15 @@
 % Sections formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-
+  }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
 %-------------------------
 % Custom commands
 \newcommand{\Role}{Database Engineer}
+\newcommand{\targetrole}{ds}
 \newcommand{\resumeItem}[1]{
   \item\small{
     {#1 \vspace{-2pt}}
@@ -101,6 +103,7 @@
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
 
 %-------------------------------------------
 
@@ -180,11 +183,11 @@
 \begin{itemize}[leftmargin=0.35in, itemsep=2pt, topsep=2pt, parsep=0pt]
   \item \small{
     \textbf{Machine Learning Specialization}, Stanford University $|$ 
-    \href{https://www.coursera.org/account/accomplishments/specialization/certificate/AYARBY9R25FR}{\underline{Credential}}
+    \href{https://coursera.org/verify/specialization/AYARBY9R25FR}{\underline{Credential}}
   }
   \item \small{
     \textbf{Deep Learning Specialization}, DeepLearning.AI $|$ 
-    \href{https://coursera.org/verify/YYYYYY}{\underline{Credential}}
+    \href{https://coursera.org/verify/specialization/91Y9ZLZ114TX}{\underline{Credential}}
   }
 \end{itemize}
 
